@@ -1,40 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <style>
-    label {
-      display: block;
-      background: #dbdbd9;
-      width: 80px;
-      height: 80px;
-      text-align: center;
-      line-height: 80px;
-    }
-    #box:checked + label {
-      background: #fffc47;
-      color: #666666;
-    }
-  </style>
+   <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
-  <input type="checkbox" id="openModal" style="display:none;" />
-  <label for="box">Click here</label>
+<!-- Trigger/Open The Modal -->
+<button id="openModal">Open Modal</button>
 
-
-
-<div class="modal" id="modal">
-  <div class="modal-content">
-    <div class="modal-header">
-      <h2>Modal Header</h2>
-      <label class="close-modal" for="modal">&times;</label>
+<!-- The Modal -->
+<div id="myModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+		<div class="modal-haeder">
+        <span class="close">×</span>
+        <h2>Modal Header</h2>
+		</div>
+		<div class="modal-body">
+        <p>Modal Body Content</p>
+		</p>
     </div>
-    <div class="modal-body">
-      <p>Modal Body Content</p>
-    </div>
-  </div>
 </div>
-
-<input type="checkbox" id="modal-checkbox" />
 
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
